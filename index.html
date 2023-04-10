@@ -9,62 +9,73 @@
     <link rel="stylesheet" href="style/mobile.css" media="all">
 </head>
 <body>
-    <header>
-        <img src="assets/logo/logo-menor.png" alt="logo do site, um r com um m pendurado.">
-        <h1>Rafael Menezes</h1>
-        <nav>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+    <header class="header">
+        <img class="header__img" src="assets/logo/logo-menor.png" alt="logo do site, que é um r com um m pendurado.">
+        <h1 class="h1 h1--header">Rafael Menezes</h1>
+        <nav class="nav">
+            <a class="a" href="#">Perfil</a>
+            <a class="a" href="#">Habilidades</a>
+            <a class="a" href="#">Projetos</a>
+            <a class="a" href="#">Contato</a>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <div>
-                <h1>Olá, sou <strong>Rafael</strong>!</h1>
-                <h2>Bem-vindo ao meu portfólio.</h2>
-                <p>Programador front end</p>
+    <main class="main">
+        <section class="section">
+            <div class="organization-block">
+                <h1 class="h1">Olá, sou <strong class="strong">Rafael</strong>!</h1>
+                <h2 class="h2">Bem-vindo ao meu portfólio.</h2>
+                <button class="button button--highlighted"></button>
+                <button class="button"></button>
             </div>
-            <img src="assets/profile/profile-foto.png" alt="foto de perfil do criador do site, Rafael Menezes.">
+            <img class="section__img section__img--profile" src="assets/profile/profile-foto.png" alt="foto de perfil do criador do site, Rafael Menezes.">
+            <div class="organization-block--vertical">
+                <div class="organization-block">
+                    <span class="text text--demo">menos detalhes</span>
+                    <button class="button button--legend-profile"></button>
+                    <button class="button button--legend-profile"></button>
+                    <button class="button button--legend-profile"></button>
+                    <span class="text text--demo">mais detalhes</span>
+                </div>
+                <p class="p"></p>
+            </div>
         </section>
 
-        <section>
-            <h1>Habilidades</h1>
-            <div>
-                <svg>
+        <section class="section">
+            <h1 class="h1">Habilidades</h1>
+            <div class="organization-block">
+                <svg class="organization-block__ability">
 
                 </svg>
             </div>
         </section>
 
-        <section>
-            <h1>Projetos</h1>
-            <h2>Destaques</h2>
-            <nav>
-                <a rel="external" target="_blank" hreflang="pt-br" href="#">
+        <section class="section">
+            <h1 class="h1">Projetos</h1>
+            <h2 class="h2">Destaques</h2>
+            <nav class="nav">
+                <a class="a" rel="external" target="_blank" hreflang="pt-br" href="#">
 
                 </a> 
             </nav>
-            <div>
-                <h2>Todos</h2>
-                <button>mostrar mais</button>
+            <div class="organization-block">
+                <h2 class="h2">Todos</h2>
+                <button class="button">mostrar mais</button>
             </div>
-            <nav>
-                <a rel="external" target="_blank" hreflang="pt-br" href="#">
+            <nav class="nav">
+                <a class="a" rel="external" target="_blank" hreflang="pt-br" href="#">
 
                 </a>
             </nav>
         </section>
     </main>
 
-    <footer>
-        <h1>Contato</h1>
-        <nav>
-            <a rel="external" target="_blank" hreflang="pt-br" href="#">
-                <img src="" alt="">
-                <p><strong>Github</strong><br>RGMenezes</p>
+    <footer class="footer">
+        <h1 class="h1">Contato</h1>
+        <nav class="nav">
+            <a class="a" rel="external" target="_blank" hreflang="pt-br" href="#">
+                <img class="a__img" src="" alt="">
+                <p class="p"><strong class="strong">Github</strong><br>RGMenezes</p>
             </a>
         </nav>
     </footer>

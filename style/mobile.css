@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap');
 
 :root{
-    --color1:#DFF8EB;
-    --color2:#547AA5;
-    --color3:#FF4000;
-    --color4:#011936;
-    --color5:#000c1b;
+    --color1:#e6f99d;
+    --color2:#c8e98e;;
+    --color3:#7fda89;
+    --color4:#259073;
+    --color5:#041122;
 
     --font-main: 'Ruda', sans-serif;
     --font-general: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -61,7 +61,7 @@
     margin: 20px 0px 10px 0px;
 
     font: 800 normal 2em var(--font-main);
-    color: var(--color2);
+    color: var(--color1);
 }
 
 .h1--header{
@@ -72,7 +72,7 @@
 
 
 .h1 > .strong{
-    color: var(--color3);
+    color: var(--color4);
 }
 
 
@@ -101,7 +101,7 @@
 
 
 .menu-button{
-    width: 40px;
+    width: 30px;
 
     justify-self: end;
 

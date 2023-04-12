@@ -27,6 +27,9 @@
 }
 
 
+.body{
+    
+}
 
 
 .header{
@@ -62,6 +65,14 @@
     margin: 0px;
 
     font-size: 1.5em;
+}
+
+
+.h2{
+    margin: 15px 0px 5px 0px;
+
+    font: 600 normal 1.5em var(--font-main);
+    color: var(--color5);
 }
 
 
@@ -127,4 +138,13 @@
 .menu-button__bar{
     transform-origin: center center;
     transition: all .3s ease;
+}
+
+
+.section{
+
+}
+
+.section--profile{
+
 }

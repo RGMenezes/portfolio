@@ -11,16 +11,20 @@
 <body class="body">
     <header class="header">
         <h1 class="h1 h1--header">RGM</h1>
-        <svg class="menu-button" viewBox="0 0 130 100">
+        <svg onclick="activeMenu(true)" class="menu-button" viewBox="0 0 130 100">
             <rect class="menu-button__bar" x="0" y="0" width="130" height="15" rx="10"/>
             <rect class="menu-button__bar" x="0" y="42.5" width="130" height="15" rx="10"/>
             <rect class="menu-button__bar" x="0" y="85" width="130" height="15" rx="10"/>
         </svg>
         <nav class="nav">
-            <a class="a" href="#">Perfil</a>
-            <a class="a" href="#">Habilidades</a>
-            <a class="a" href="#">Projetos</a>
-            <a class="a" href="#">Contato</a>
+            <a onmouseenter="explainOption(true, 's')" onmouseout="explainOption(false, 's')" 
+               class="a a--background-dark a--button-shape" href="#">S</a>
+            <a onmouseenter="explainOption(true, 'h')" onmouseout="explainOption(false, 'h')"
+               class="a a--background-dark a--button-shape" href="#">H</a>
+            <a onmouseenter="explainOption(true, 'p')" onmouseout="explainOption(false, 'p')"
+               class="a a--background-dark a--button-shape" href="#">P</a>
+            <a onmouseenter="explainOption(true, 'c')" onmouseout="explainOption(false, 'c')"
+               class="a a--background-dark a--button-shape" href="#">C</a>
         </nav>
     </header>
 
@@ -83,5 +87,8 @@
             </a>
         </nav>
     </footer>
+
+    <script src="script/button-menu.js"></script>
+    <script src="script/option-menu.js"></script>
 </body>
 </html>

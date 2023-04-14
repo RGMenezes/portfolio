@@ -27,6 +27,75 @@
 }
 
 
+/*main blocks*/
 .body{
+    background-color: var(--color2);
+}
+
+
+.header{
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+
+/*images and icons*/
+.logo{
+    width: 40px;
+    height: 40px;
+
+    fill: var(--color5);
+}
+
+
+/*Text*/
+.h1{
+    font: 800 normal 2.5em var(--font-main);
+    color: var(--color5);
+}
+.h1--small{
+    font-size: 1.8em;
+}
+
+
+/*interactive elements*/
+.a{
+    font: normal normal 1em var(--font-main);
+    text-decoration: none;
+    color: var(--color5);
+    border-color: var(--color5);
     
+    transition: all .3s ease;
+}
+.a:active{
+    color: var(--color3);
+    border-color: var(--color3);
+    box-shadow: none;
+
+    transform: translate(1px, 1px);
+    transition: all .1s ease;
+}
+
+.a--button{
+    padding: 7px 10px;
+    
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/*position elements*/
+.justify-center{
+    justify-self: center;
+}
+.justify-left{
+    justify-self: start;
+}
+.justify-right{
+    justify-self: end;
 }

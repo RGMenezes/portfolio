@@ -35,10 +35,40 @@
 
 .header{
     padding: 20px;
+    margin-bottom: 100px;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px;
     align-items: center;
+}
+
+
+.main{
+    margin-bottom: 100px;
+}
+
+
+.section{
+    margin: 150px 0px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.section--dark{
+    padding: 100px 0px;
+
+    background-color: var(--color5);
+    background-image: url(../assets/backgrond/layout-1.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section--dark .h1, .section--dark .h2, .section--dark .p{
+    color: var(--color2);
 }
 
 
@@ -50,11 +80,35 @@
     fill: var(--color5);
 }
 
+.profile{
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 150px auto;
+
+    background-color: var(--color1);
+    border-radius: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
 
 /*Text*/
+.strong{
+    font-weight: 800;
+    font-size: 1.1em;
+}
+.strong--flashy{
+    text-shadow: 3px 3px 0px var(--color5);
+}
+
 .h1{
-    font: 800 normal 2.5em var(--font-main);
+    padding: 20px;
+
+    font: 800 normal 2.2em var(--font-main);
     color: var(--color5);
+    text-align: center;
+}
+.h1 > .strong{
+    color: var(--color3);
 }
 .h1--small{
     font-size: 1.8em;
@@ -89,7 +143,7 @@
 }
 
 
-/*position elements*/
+/*organization elements*/
 .justify-center{
     justify-self: center;
 }

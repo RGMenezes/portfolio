@@ -49,7 +49,8 @@
 
 
 .section{
-    margin: 150px 0px;
+    padding: 100px 0px;
+    margin: 50px 0px;
 
     display: flex;
     flex-flow: column nowrap;
@@ -57,8 +58,6 @@
 }
 
 .dark{
-    padding: 100px 0px;
-
     background-color: var(--color5);
 }
 .dark .h1, .dark .h2, .dark .p{
@@ -70,6 +69,39 @@
     max-width: 1100px;
 
     margin: 50px 10px 100px 10px;
+}
+
+
+.information-message{
+    cursor: none;
+
+    padding: 10px 0px;
+    width: 100vw;
+
+    position: fixed;
+    bottom: 0px;
+
+    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.5);
+
+    transform: translate(0px, 100%);
+    transition: all .5s ease .3s;
+}
+.information-message--on{
+    transform: translate(0px, 0px);
+    transition: all .3s ease;
+}
+.information-message .h1{
+    padding: 10px;
+    
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.information-message .p{
+    padding: 0px 10px;
+
+    font-size: .9em;
+    font-weight: 400;
+    line-height: 1.5em;
 }
 
 
@@ -146,7 +178,7 @@
 
 .p{
     max-width: 600px;
-    margin: 10px 0px;
+    margin: 10px auto;
     padding: 10px;
 
     font: normal normal 1.1em var(--font-main);

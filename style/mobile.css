@@ -148,6 +148,61 @@
 }
 
 
+.button{
+    cursor: pointer;
+
+    padding: 10px 15px;
+    margin: 25px 0px;
+
+    background-color: var(--color2);
+    font: 600 normal 1.1em var(--font-main);
+    color: var(--color5);
+    border: 1px solid var(--color5);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+ 
+    border-radius: 50px;
+    
+    transition: all .3s ease;
+}
+.button:active{
+    color: var(--color3);
+    border-color: var(--color3);
+    box-shadow: none;
+
+    transform: translate(1px, 1px);
+    transition: all .1s ease;
+}
+
+.button--flashy{
+    color: var(--color3);
+    border-color: var(--color3);
+}
+.button--flashy:active{
+    color: var(--color1);
+    border-color: var(--color1);
+}
+
+.button--inverted{
+    background-color: var(--color5);
+    border-color: var(--color2);
+    color: var(--color2);
+}
+.button--inverted:active{
+    border-color: var(--color3);
+    color: var(--color3);
+}
+.button--inverted-flashy{
+    background-color: var(--color3);
+    border: none;
+    color: var(--color5);
+}
+.button--inverted-flashy:active{
+    background-color: var(--color1);
+    border: none;
+    color: var(--color5);
+}
+
+
 .size-selection-about-me{
     margin: 50px 0px 25px 0px;
 
@@ -173,6 +228,15 @@
 }
 .size-selection-about-me__button--active{
     background-color: var(--color3);
+}
+.size-selection-about-me__text{
+    transition: all .3s ease;
+}
+.size-selection-about-me__text--off{
+    padding: 0px;
+    margin: 0px;
+
+    font-size: 0px;
 }
 
 

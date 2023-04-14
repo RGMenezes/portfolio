@@ -20,7 +20,7 @@
     </header>
 
     <main class="main">
-        <h1 class="h1">Bem-vindo ao <br><strong class="strong strong--flashy">meu portfólio!</strong></h1>
+        <h1 class="h1">Bem-vindo ao <br><strong class="strong strong--flashy">eu portfólio!</strong></h1>
 
         <div class="profile">
 
@@ -28,18 +28,30 @@
 
         <section class="section section--dark">
             <h1 class="h1">Sobre mim</h1>
-            <div>
-                <span>menos curto</span>
-                <button></button>
-                <button></button>
-                <button></button>
-                <span>mais longo</span>
+            <div class="size-selection-about-me">
+                <span class="size-selection-about-me__text-demo">mais curto</span>
+                <button onclick="selectAboutMe(0)" class="size-selection-about-me__button"></button>
+                <button onclick="selectAboutMe(1)" class="size-selection-about-me__button"></button>
+                <button onclick="selectAboutMe(2)" class="size-selection-about-me__button"></button>
+                <span class="size-selection-about-me__text-demo">mais longo</span>
             </div>
             <p class="p">
-                Olá, sou o Rafael. Prazer em conhecê-lo.<br> Estou no começo de minha carreira como programador Front-end, e realmente é algo que amo fazer, já fiz alguns projetos, que podem ser acessados mais adiante,  onde aplico meu conhecimento buscando proporcionar a melhor experiência para o usuário. Hoje busco ampliar meus conhecimentos e ajudar no crescimento de uma empresa que busca evoluir a cada dia, se essa for a sua empresa <a class="" href=”#”>me chame!</a>
+                <strong class="strong">Olá, sou o Rafael. Prazer em conhecê-lo.</strong> <br> Desde cedo sempre fui apaixonado por tecnologia, foi aí que descobri o desenvolvimento web e adquiri conhecimentos sobre HTML, CSS e JavaScript, recentemente, comecei a estudar frameworks como o React.
             </p>
+            <p class="p size-selection-about-me__text">
+                Nessa jornada também aprendi o básico sobre Design, além de ferramentas como o Figma e a manipular arquivos SVGs.
+            </p>
+            <p class="p size-selection-about-me__text">
+                Atualmente trabalho em projetos pessoais implementando e evoluindo minhas habilidades e busco a minha primeira oportunidade como programador Front-end. Estou aberto a aprender e disposto a trabalhar duro para alcançar meus objetivos.
+            </p>
+                 
+
             <button>Donwload CV</button>
         </section>
     </main>
+
+
+
+    <script src="script/SelectAboutMe.js"></script>
 </body>
 </html>

@@ -176,6 +176,15 @@
 }
 
 
+.h2{
+    padding: 15px;
+
+    font: 800 normal 1.5em var(--font-main);
+    color: var(--color5);
+    text-align: center;
+}
+
+
 .p{
     max-width: 600px;
     margin: 10px auto;

@@ -23,6 +23,11 @@
 ::-webkit-scrollbar{
     width: 0px;
     height: 0px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    border: 1px solid var(--color2);
+    background-color: var(--color4);
 }
 
 
@@ -245,6 +250,7 @@
     padding: 10px;
 
     font: normal normal 1.1em var(--font-main);
+    color: var(--color5);
     text-align: center;
     line-height: 2em;
 }
@@ -266,6 +272,45 @@
 
     transform: translate(1px, 1px);
     transition: all .1s ease;
+}
+
+.a--text{
+    position: relative;
+    color: var(--color4);
+}
+.a--text::after{
+    content: " ";
+
+    width: 0%;
+    height: 2px;
+
+    display: block;
+
+    position: absolute;
+    bottom: -2px;
+
+    background-color: var(--color4);
+    transition: all .3s ease;
+}
+.a--text:hover::after{
+    width: 100%;
+}
+.a--text:active::after{
+    background-color: var(--color3);
+    transition: all .1s ease;
+}
+
+.a--text-flashy{
+    color: var(--color3);
+}
+.a--text-flashy::after{
+    background-color: var(--color3);
+}
+.a--text-flashy:active{
+    color: var(--color5);
+}
+.a--text-flashy:active:after{
+    background-color: var(--color5);
 }
 
 .a--button{
@@ -371,8 +416,61 @@
 
 
 .screen-project{
+    width: 300px;
+    height: 500px;
+
+    padding: 10px;
+
     position: fixed;
-    display: none;
+    top: 50%;
+    left: 50%;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr 1fr auto;
+    justify-items: center;
+    align-items: center;
+
+    background-color: var(--color1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    transform: translate(-50%, -50%);
+}
+.screen-project .h1{
+    font-size: 1.5em;
+}
+.screen-project .p{
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+.screen-project__images{
+    overflow: scroll;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.screen-project__images::-webkit-scrollbar{
+    height: 4px;
+}
+
+.screen-project__img{
+    width: 200px;
+    height: 112px;
+}
+
+.screen-project__sub-text{
+    font: 600 normal .8em var(--font-main);
+    color: var(--color4);
+    text-align: center;
+}
+
+.screen-project__nav{
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: start;
 }
 
 
@@ -393,4 +491,11 @@
     justify-content: center;
     align-content: center;
     gap: 40px;
+}
+
+.carousel{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 20px;
 }

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+
+::-webkit-scrollbar{
+    height: 10px;
+    width: 10px;
+}
+
+
+
+.body{
+    font-size: 1.2em;
+}
+
+
+.profile{
+    width: 300px;
+    height: 300px;
+}
+
+
+.project--emphasis{
+    width: 500px;
+    height: 281px;
+
+    gap: 10px;
+}
+
+
+
+.screen-project{
+    width: 400px;
+    height: 600px;
+}
+
+.screen-project__images::-webkit-scrollbar{
+    height: 10px;
+}
+
+.screen-project__img{
+    width: 300px;
+    height: 169px;
+}
+
+
+.icon-contact{
+    width: 80px;
+    height: 80px;
+}
+
+.icon-contact__icon{
+    width: calc(100% - 30px);
+}

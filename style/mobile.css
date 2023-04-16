@@ -130,10 +130,6 @@ html{
 
     transition: all .3s ease;
 }
-.project-small{
-    max-width: 300px;
-    max-height: 169px;
-}
 .project:hover .project__img, .project:focus-within .project__img{
     filter: blur(3px);
 }

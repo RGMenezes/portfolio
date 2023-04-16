@@ -126,6 +126,7 @@ html{
     align-items: center;
 
     border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 
     transition: all .3s ease;
 }
@@ -134,7 +135,7 @@ html{
     max-height: 169px;
 }
 .project:hover .project__img, .project:focus-within .project__img{
-    transform: scale(0);
+    filter: blur(3px);
 }
 .project:hover .project__description, .project:focus-within .project__description{
     transform: scale(1);

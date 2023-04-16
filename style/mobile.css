@@ -171,7 +171,11 @@ html{
 
 
 .footer{
-    padding: 50px 10px;
+    padding: 100px 10px 50px 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 
@@ -228,6 +232,27 @@ html{
 }
 
 
+.icon-contact{
+    width: 50px;
+    height: 50px;
+
+    padding: 1px;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    background-color: var(--color2);
+    fill: var(--color5);
+    border-radius: 100%;
+
+    transition: all .3s ease;
+}
+.icon-contact__icon{
+    width: calc(100% - 15px) ;
+}
+
+
 /*Text*/
 .strong{
     font-weight: 800;
@@ -278,16 +303,12 @@ html{
     font: normal normal 1em var(--font-main);
     text-decoration: none;
     color: var(--color5);
-    border-color: var(--color5);
     
     transition: all .3s ease;
 }
 .a:active{
     color: var(--color3);
-    border-color: var(--color3);
-    box-shadow: none;
 
-    transform: translate(1px, 1px);
     transition: all .1s ease;
 }
 
@@ -337,15 +358,50 @@ html{
 .a--button{
     padding: 7px 10px;
     
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid var(--color5);
     border-radius: 50px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.a--button:active{
+    border-color: var(--color3);
+    box-shadow: none;
+
+    transform: translate(1px, 1px);
 }
 .a--button-inverted{
     background-color: var(--color5);
     color: var(--color2);
     border-color: var(--color2);
+}
+.a--button:hover, .a--button:focus{
+    outline: none;
+    transform: scale(.9);
+}
+
+.a--block{
+    width: 200px;
+
+    display: grid;
+    justify-items: center;
+    align-content: center;
+
+    color: var(--color2);
+}
+.a--block .p{
+    font-size: 1em;
+    color: inherit;
+    line-height: 1.5em;
+}
+.a--block:hover, .a--block:focus{
+    color: var(--color3);
+    outline: none;
+}
+.a--block:hover .icon-contact, .a--block:focus .icon-contact{
+    background-color: var(--color3);
+}
+.a--block:active{
+    transform: scale(.85);
+    transition: all .1s ease;
 }
 
 
@@ -364,6 +420,10 @@ html{
     border-radius: 50px;
     
     transition: all .3s ease;
+}
+.button:hover, .button:focus{
+    outline: none;
+    transform: scale(0.9);
 }
 .button:active{
     color: var(--color3);

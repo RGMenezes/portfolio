@@ -71,37 +71,7 @@ html{
 }
 
 
-.information-message{
-    cursor: none;
 
-    padding: 10px 0px;
-    width: 100vw;
-
-    position: fixed;
-    bottom: 0px;
-
-    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.5);
-
-    transform: translate(0px, 100%);
-    transition: all .5s ease .3s;
-}
-.information-message--on{
-    transform: translate(0px, 0px);
-    transition: all .3s ease;
-}
-.information-message .h1{
-    padding: 10px;
-    
-    font-size: 1.3em;
-    font-weight: 600;
-}
-.information-message .p{
-    padding: 0px 10px;
-
-    font-size: .9em;
-    font-weight: 400;
-    line-height: 1.5em;
-}
 
 
 .project{
@@ -175,35 +145,6 @@ html{
     background-color: var(--color1);
     border-radius: 100%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.skill{
-    cursor: pointer;
-    width: 80px;
-    height: 80px;
-
-    padding: 20px;
-
-    display: grid;
-    align-items: center;
-    justify-items: center;
-
-    background-color: var(--color5);
-    fill: var(--color2);
-    border: 2px solid transparent;
-    border-radius: 5px;
-
-    transition: all .3s ease;
-}
-.skill:hover, .skill:focus{
-    background-color: var(--color1);
-    border-color: var(--color5);
-    outline: none  ;
-    fill: var(--color5);
-}
-.skill__icon{
-    width: 100%;
-    height: 100%;
 }
 
 

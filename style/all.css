@@ -40,18 +40,6 @@ html{
     background-color: var(--color2);
 }
 
-
-.header{
-    padding: 20px;
-    margin-bottom: 100px;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50px;
-    align-items: center;
-}
-
-
 .main{
     margin-bottom: 100px;
 }
@@ -176,12 +164,6 @@ html{
 
 
 /*images and icons*/
-.logo{
-    width: 40px;
-    height: 40px;
-
-    fill: var(--color5);
-}
 
 .profile{
     width: 200px;

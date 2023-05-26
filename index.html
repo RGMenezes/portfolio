@@ -6,19 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael G Menezes</title>
     <link rel="shortcut icon" href="assets/logo/logo-small.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style/mobile.css" media="all">
-    <link rel="stylesheet" href="style/mobile-landscape.css" media="(orientation: landscape)">
+    <link rel="stylesheet" href="style/all.css" media="all">
+    <link rel="stylesheet" href="style/header.css" media="all">
     <link rel="stylesheet" href="style/other-screen.css" media="screen and (min-width: 1025px)">
-    <link rel="stylesheet" href="style/other-screen-landscape.css" media="screen and (min-width: 1025px) and (orientation: landscape)">
 </head>
 <body class="body">
+    <div id="top"></div>
     <header class="header">
-        <svg class="logo" viewBox="0 0 300 300">
-            <use xlink:href="assets/logo/logo.svg#icon"/>
-        </svg>
+        <a href="#top" class="container--logo">
+            <svg class="logo" viewBox="0 0 300 300">
+                <use xlink:href="assets/logo/logo.svg#icon"/>
+            </svg>
+        </a>
 
-        <a class="a a--button justify-right" href="#contact">Contato</a>
+        <div class="container--menu">
+            <a class="a a--button justify-right" href="#contact">Contato</a>
+            <svg onclick="MenuNavigation(true)" class="icon--menu" viewBox="0 0 120 100" >
+                <rect width="120" height="15" ry="6" y="0"   />
+                <rect width="120" height="15" ry="6" y="42.5"/>
+                <rect width="120" height="15" ry="6" y="85"  />
+            </svg>
+        </div>
+
+        <nav class="navigation">
+            <a class="a a--text" href="#about">Sobre</a>
+            <a class="a a--text" href="#skill">Habilidades</a>
+            <a class="a a--text" href="#project">Projetos em destaque</a>
+            <a class="a a--text" href="#project-all">Todos os projetos</a>
+            <a class="a a--text" href="#contact">Contatos</a>
+        </nav>
     </header>
+
+    <nav class="menu--navigation">
+        <nav class="navigation">
+            <a class="a a--text" href="#about">Sobre</a>
+            <a class="a a--text" href="#skill">Habilidades</a>
+            <a class="a a--text" href="#project">Projetos em destaque</a>
+            <a class="a a--text" href="#project-all">Todos os projetos</a>
+            <a class="a a--text" href="#contact">Contatos</a>
+        </nav>
+
+        <footer class="menu--navigation__footer">
+            <a class="a a--block" href="mailto:faelgmp@gmail.com"
+                target="_blank" rel="external">
+                    <div class="icon-contact">
+                        <svg alt="ícone e-mail" class="icon-contact__icon" viewBox="0 0 500 500">
+                            <use xlink:href="assets/icons/icon-email.svg#icon"/>
+                        </svg>
+                    </div>
+                </a>
+                <a class="a a--block" href="https://github.com/RGMenezes"
+                target="_blank" rel="external" hreflang="en-us">
+                    <div class="icon-contact">
+                        <svg alt="logotipo github" class="icon-contact__icon" viewBox="0 0 500 500">
+                            <use xlink:href="assets/icons/icon-github.svg#icon"/>
+                        </svg>
+                    </div>
+                </a>
+                <a class="a a--block" href="https://www.linkedin.com/in/rafael-menezes-16b002246/"
+                target="_blank" rel="external" hreflang="pt-br">
+                    <div class="icon-contact">
+                        <svg alt="logotipo linkein" class="icon-contact__icon" viewBox="0 0 500 500">
+                            <use xlink:href="assets/icons/icon-linkedin.svg#icon"/>
+                        </svg>
+                    </div>
+                </a>
+        </footer>
+    </nav>
+
+    
 
     <main class="main">
         <h1 class="h1">Desenvolvedor<br><strong class="strong strong--flashy">Front-end</strong></h1>
@@ -27,7 +83,7 @@
             <p class="p">Rafael da Gloria Menezes</p>
         </div>
 
-        <section class="section dark">
+        <section id="about" class="section dark">
             <h1 class="h1">Sobre mim</h1>
             <div class="size-selection-about-me">
                 <span class="size-selection-about-me__text-demo">mais curto</span>
@@ -50,7 +106,7 @@
             <button class="button button--inverted-flashy">Donwload CV</button>
         </section>
 
-        <section class="section">
+        <section id="skill" class="section">
             <h1 class="h1">Habilidades</h1>
             <div id="block-skills" class="block flex-center-elements">
                 <div tabindex="0" class="skill">
@@ -87,7 +143,7 @@
         </section>
 
         <section class="section">
-            <h1 class="h1">Projetos</h1>
+            <h1 id="project" class="h1">Projetos</h1>
             <h2 class="h2">Destaques</h2>
             <div class="block flex-center-elements">
                 <section class="project project--emphasis">
@@ -130,7 +186,7 @@
                     </section>
                 </section>
             </div>
-            <h2 class="h2">Todos</h2>
+            <h2 id="project-all" class="h2">Todos</h2>
             <div class="block flex-center-elements">
                 <section class="project">
                     <img class="project__img" src="assets/projects/test-area/test-area-1.png" alt="imagem do projeto, area de testes.">
@@ -202,6 +258,7 @@
 
 
 
+    <script src="script/MenuNavigation.js"></script>
     <script src="script/SelectAboutMe.js"></script>
     <script src="script/ShowInformationMessage.js"></script>
     <script src="script/ShowScreenProjects.js"></script>

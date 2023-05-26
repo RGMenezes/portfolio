@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+.header{
+    padding: 15px;
+    margin-bottom: 100px;
+
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px;
+    align-items: center;
+
+    background-color: var(--color1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container--logo{
+    width: 40px;
+    height: 40px;
+}
+
+.container--menu{
+    width: fit-content;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-self: flex-end;
+    gap: 20px;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+
+    fill: var(--color5);
+
+    transition: all .3s ease;
+}
+
+.logo:active{
+    transform: scale(.9);
+    transition: all .1s ease;
+}
+
+.icon--menu{
+    cursor: pointer;
+    width: 40px;
+}
+
+.icon--menu rect{
+    transform-origin: center center;
+    transition: all .3s ease;
+}
+
+.menu--navigation{
+    z-index: 1;
+    width: 250px;
+    height: calc(100vh - 80px);
+
+    padding-top: 10px;
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+
+    display: grid;
+    grid-template-rows: auto auto;
+
+
+    background-color: var(--color1);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+
+    transform: translate(-100%, 0px);
+    transition: all .3s ease;
+}
+.menu--navigation .navigation{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+.menu--navigation__footer{
+    height: fit-content;
+
+    padding: 30px 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-self: flex-end;
+    gap: 10px;
+
+    border-top: 1px solid var(--color5);
+}
+.menu--navigation__footer .a--block{
+    width: fit-content;
+}
+.menu--navigation__footer .icon-contact{
+    background-color: var(--color5);
+}
+.menu--navigation__footer .icon-contact__icon{
+    fill: var(--color1);
+}
+
+.navigation{
+    padding: 15px;
+
+    display: none;
+}
+
+@media screen and (min-width: 481px) {
+    .logo:hover{
+        fill: var(--color3);
+    }
+}

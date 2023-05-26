@@ -444,41 +444,7 @@ html{
 }
 
 
-.size-selection-about-me{
-    margin: 50px 0px 25px 0px;
 
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 20px;
-}
-.size-selection-about-me__text-demo{
-    font: 300 normal .9em var(--font-main);
-    color: rgb(107, 107, 107);
-}
-.size-selection-about-me__button{
-    cursor: pointer;
-
-    width: 20px;
-    height: 20px;
-
-    background-color: var(--color2);
-    border: none;
-    border-radius: 100%;
-
-    transition: all .3s ease;
-}
-.size-selection-about-me__button--active{
-    background-color: var(--color3);
-}
-.size-selection-about-me__text{
-    transition: all .3s ease;
-}
-.size-selection-about-me__text--off{
-    padding: 0px;
-    margin: 0px;
-
-    font-size: 0px;
-}
 
 
 .screen-project{

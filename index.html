@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="style/header.css" media="all">
     <link rel="stylesheet" href="style/about.css" media="all">
     <link rel="stylesheet" href="style/skill.css" media="all">
+    <link rel="stylesheet" href="style/project.css" media="all">
+    <link rel="stylesheet" href="style/project-highlight.css" media="all">
+    <link rel="stylesheet" href="style/project-highlight.css" media="all">
     <link rel="stylesheet" href="style/other-screen.css" media="screen and (min-width: 1025px)">
 </head>
 <body onresize="onResizeMenuNavigation()" class="body">
@@ -33,7 +36,7 @@
         <nav class="navigation">
             <a class="a a--text" href="#about">Sobre</a>
             <a class="a a--text" href="#skill">Habilidades</a>
-            <a class="a a--text" href="#project">Destaque</a>
+            <a class="a a--text" href="#project-highlight">Destaque</a>
             <a class="a a--text" href="#project-all">Projetos</a>
             <a class="a a--text" href="#contact">Contatos</a>
         </nav>
@@ -43,7 +46,7 @@
         <nav class="navigation">
             <a class="a a--text" href="#about">Sobre</a>
             <a class="a a--text" href="#skill">Habilidades</a>
-            <a class="a a--text" href="#project">Projetos em destaque</a>
+            <a class="a a--text" href="#project-highlight">Projetos em destaque</a>
             <a class="a a--text" href="#project-all">Todos os projetos</a>
             <a class="a a--text" href="#contact">Contatos</a>
         </nav>
@@ -166,9 +169,8 @@
             </div>
         </section>
 
-        <section class="section">
-            <h1 id="project" class="h1">Projetos</h1>
-            <h2 class="h2">Destaques</h2>
+        <section id="project-highlight" class="section">
+            <h1 class="h1">Destaque</h1>
             <div class="block flex-center-elements">
                 <section class="project project--emphasis">
                     <img class="project__img" src="assets/projects/form-multi-step/form-multi-step-1.png" alt="imagem do projeto, formulário de multiplas etapas">
@@ -210,7 +212,10 @@
                     </section>
                 </section>
             </div>
-            <h2 id="project-all" class="h2">Todos</h2>
+        </section>
+
+        <section id="project-all" class="section">
+            <h1 class="h1">Projetos</h1>
             <div class="block flex-center-elements">
                 <section class="project">
                     <img class="project__img" src="assets/projects/test-area/test-area-1.png" alt="imagem do projeto, area de testes.">

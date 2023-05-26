@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style/header.css" media="all">
     <link rel="stylesheet" href="style/other-screen.css" media="screen and (min-width: 1025px)">
 </head>
-<body class="body">
+<body onresize="onResizeMenuNavigation()" class="body">
     <div id="top"></div>
     <header class="header">
         <a href="#top" class="container--logo">
@@ -31,8 +31,8 @@
         <nav class="navigation">
             <a class="a a--text" href="#about">Sobre</a>
             <a class="a a--text" href="#skill">Habilidades</a>
-            <a class="a a--text" href="#project">Projetos em destaque</a>
-            <a class="a a--text" href="#project-all">Todos os projetos</a>
+            <a class="a a--text" href="#project">Destaque</a>
+            <a class="a a--text" href="#project-all">Projetos</a>
             <a class="a a--text" href="#contact">Contatos</a>
         </nav>
     </header>
@@ -77,10 +77,11 @@
     
 
     <main class="main">
-        <h1 class="h1">Desenvolvedor<br><strong class="strong strong--flashy">Front-end</strong></h1>
-
-        <div class="profile">
-            <p class="p">Rafael da Gloria Menezes</p>
+        <div class="section" >
+            <h1 class="h1">Desenvolvedor<br><strong class="strong strong--flashy">Front-end</strong></h1>
+            <div class="profile">
+                <p class="p">Rafael da Gloria Menezes</p>
+            </div>
         </div>
 
         <section id="about" class="section dark">

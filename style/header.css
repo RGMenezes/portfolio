@@ -2,7 +2,6 @@
 
 .header{
     padding: 15px;
-    margin-bottom: 100px;
 
     position: sticky;
     top: 0px;
@@ -10,7 +9,7 @@
     z-index: 2;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto 1fr;
     grid-template-rows: 50px;
     align-items: center;
 
@@ -58,6 +57,7 @@
 }
 
 .menu--navigation{
+    overflow: auto;
     z-index: 1;
     width: 250px;
     height: calc(100vh - 80px);
@@ -79,6 +79,8 @@
     transition: all .3s ease;
 }
 .menu--navigation .navigation{
+    padding: 50px 0px;
+    
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
@@ -101,6 +103,8 @@
     width: fit-content;
 }
 .menu--navigation__footer .icon-contact{
+    width: 40px;
+    height: 40px;
     background-color: var(--color5);
 }
 .menu--navigation__footer .icon-contact__icon{
@@ -111,10 +115,21 @@
     padding: 15px;
 
     display: none;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
 }
 
 @media screen and (min-width: 481px) {
     .logo:hover{
         fill: var(--color3);
+    }
+
+    .container--menu{
+        display: none;
+    }
+
+    .navigation{
+        display: flex;
     }
 }

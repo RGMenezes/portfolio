@@ -4,6 +4,12 @@ for(let link = 0; link < arrLinkMenuNavigation.length; link++){
     arrLinkMenuNavigation[link].setAttribute("onClick", "MenuNavigation(false)");
 };
 
+console.log(window.innerWidth);
+
+function onResizeMenuNavigation(){
+    if(window.innerWidth >= 481) MenuNavigation(false);
+};
+
 function MenuNavigation(value){
 
     const menu = document.querySelector(".menu--navigation");

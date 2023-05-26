@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.footer{
+    padding: 100px 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .block{
+    margin: 50px 10px 0px 10px;
+}

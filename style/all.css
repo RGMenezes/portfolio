@@ -171,10 +171,6 @@ html{
     position: relative;
     color: var(--color4);
 }
-.a--text:focus{
-    border: none;
-    outline: none;
-}
 .a--text::after{
     content: " ";
 
@@ -188,9 +184,6 @@ html{
 
     background-color: var(--color4);
     transition: all .3s ease;
-}
-.a--text:hover::after, .a--text:focus::after{
-    width: 100%;
 }
 .a--text:active::after{
     background-color: var(--color3);
@@ -228,10 +221,7 @@ html{
     color: var(--color2);
     border-color: var(--color2);
 }
-.a--button:hover, .a--button:focus{
-    outline: none;
-    transform: scale(.9);
-}
+
 
 .a--block{
     width: 200px;
@@ -246,13 +236,6 @@ html{
     font-size: 1em;
     color: inherit;
     line-height: 1.5em;
-}
-.a--block:hover, .a--block:focus{
-    color: var(--color3);
-    outline: none;
-}
-.a--block:hover .icon-contact, .a--block:focus .icon-contact{
-    background-color: var(--color3);
 }
 .a--block:active{
     transform: scale(.85);
@@ -275,10 +258,6 @@ html{
     border-radius: 50px;
     
     transition: all .3s ease;
-}
-.button:hover, .button:focus{
-    outline: none;
-    transform: scale(0.9);
 }
 .button:active{
     color: var(--color3);

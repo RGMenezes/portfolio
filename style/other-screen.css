@@ -7,41 +7,71 @@
 }
 
 
-.profile{
-    width: 300px;
-    height: 300px;
+.a--text:hover::after{
+    width: 100%;
+}
+
+.a--button:hover{
+    outline: none;
+    transform: scale(.9);
+}
+
+.a--block:hover{
+    color: var(--color3);
+    outline: none;
+}
+.a--block:hover .icon-contact{
+    background-color: var(--color3);
+}
+
+.button:hover{
+    outline: none;
+    transform: scale(0.9);
 }
 
 
-.project--emphasis{
-    width: 500px;
-    height: 281px;
+@media screen and (min-width: 1025px) {
 
-    gap: 10px;
-}
+    .body{
+        font-size: 1.2em;
+    }
 
-
-
-.screen-project{
-    width: 400px;
-    height: 600px;
-}
-
-.screen-project__images::-webkit-scrollbar{
-    height: 10px;
-}
-
-.screen-project__img{
-    width: 300px;
-    height: 169px;
-}
-
-
-.icon-contact{
-    width: 80px;
-    height: 80px;
-}
-
-.icon-contact__icon{
-    width: calc(100% - 30px);
+    .profile{
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+    .project--emphasis{
+        width: 500px;
+        height: 281px;
+    
+        gap: 10px;
+    }
+    
+    
+    
+    .screen-project{
+        width: 400px;
+        height: 600px;
+    }
+    
+    .screen-project__images::-webkit-scrollbar{
+        height: 10px;
+    }
+    
+    .screen-project__img{
+        width: 300px;
+        height: 169px;
+    }
+    
+    
+    .icon-contact{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .icon-contact__icon{
+        width: calc(100% - 30px);
+    }
 }

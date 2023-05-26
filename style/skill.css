@@ -18,7 +18,7 @@
 
     transition: all .3s ease;
 }
-.skill:hover, .skill:focus{
+.skill:hover{
     background-color: var(--color1);
     border-color: var(--color5);
     outline: none  ;

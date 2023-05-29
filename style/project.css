@@ -49,6 +49,6 @@
     font: normal normal .85em var(--font-main);
     color: var(--color5);
 }
-.dark .project__sub-text{
+.dark > .project__sub-text{
     color: var(--color2);
 }

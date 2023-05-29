@@ -57,7 +57,7 @@ html{
 .dark{
     background-color: var(--color5);
 }
-.dark .h1, .dark .h2, .dark .p{
+.dark > .h1, .dark > .h2, .dark > .p{
     color: var(--color2);
 }
 
@@ -190,10 +190,10 @@ html{
     transition: all .1s ease;
 }
 
-.dark .a--text{
+.dark > .a--text{
     color: var(--color1);
 }
-.dark .a--text:active{
+.dark > .a--text:active{
     color: var(--color3);
 }
 
@@ -217,14 +217,14 @@ html{
     border-radius: 50px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
-.a--button:active, .dark .a--button:active{
+.a--button:active, .dark > .a--button:active{
     border-color: var(--color3);
     color: var(--color3);
     box-shadow: none;
 
     transform: translate(1px, 1px);
 }
-.dark .a--button{
+.dark > .a--button{
     background-color: var(--color5);
     color: var(--color2);
     border-color: var(--color2);
@@ -285,21 +285,21 @@ html{
     border-color: var(--color1);
 }
 
-.dark .button{
+.dark > .button{
     background-color: var(--color5);
     border-color: var(--color2);
     color: var(--color2);
 }
-.dark .button:active{
+.dark > .button:active{
     border-color: var(--color3);
     color: var(--color3);
 }
-.dark .button-flashy{
+.dark > .button-flashy{
     background-color: var(--color3);
     border: none;
     color: var(--color5);
 }
-.dark .button-flashy:active{
+.dark > .button-flashy:active{
     background-color: var(--color1);
     border: none;
     color: var(--color5);

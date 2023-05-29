@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
 .header{
+    width: 100%;
     padding: 15px;
 
-    position: sticky;
+    position: fixed;
     top: 0px;
     left: 0px;
     z-index: 2;
@@ -48,7 +49,7 @@
 
 .icon--menu{
     cursor: pointer;
-    width: 40px;
+    width: 30px;
 }
 
 .icon--menu rect{

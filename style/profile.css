@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.profile{
+    padding: 50px 0px 0px 0px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__img{
+    width: 220px;
+}
+
+.profile .h1{
+    font-size: 1.2em;
+}

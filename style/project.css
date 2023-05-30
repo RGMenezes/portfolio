@@ -48,7 +48,12 @@
 .project__sub-text{
     font: normal normal .85em var(--font-main);
     color: var(--color5);
+    line-height: 1.3em;
 }
 .dark > .project__sub-text{
     color: var(--color2);
+}
+
+.project__sub-text span{
+    font: normal 400 .85em var(--font-main);
 }

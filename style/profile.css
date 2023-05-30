@@ -16,3 +16,9 @@
 .profile .h1{
     font-size: 1.2em;
 }
+
+@media screen and (min-width: 1025px){
+    .profile__img{
+        width: 300px;
+    }
+}

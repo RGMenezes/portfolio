@@ -104,3 +104,38 @@
     align-items: center;
     justify-items: start;
 }
+
+
+
+
+
+@media screen and (min-width: 1025px){
+    .project--emphasis{
+        width: 500px;
+    }
+    
+    
+    .screen-project{
+        gap: 100px;
+    }
+
+    .screen-project::-webkit-scrollbar{
+        width: 10px;
+    }
+    
+    .screen-project__images::-webkit-scrollbar{
+        height: 10px;
+    }
+
+    .screen-project__images{
+        min-height: 310px;
+    }
+    
+    .screen-project__img{
+        width: 500px;
+    }
+
+    .screen-project__nav{
+        max-width: 800px;
+    }
+}

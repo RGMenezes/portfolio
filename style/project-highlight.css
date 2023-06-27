@@ -99,10 +99,11 @@
 .screen-project__nav{
     width: 80%;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-flow: row wrap;
     align-items: center;
-    justify-items: start;
+    justify-content: space-around;
+    gap: 10px;
 }
 
 

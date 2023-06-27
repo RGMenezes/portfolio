@@ -41,7 +41,7 @@
 
     transition: all .3s ease;
 }
-.project__description .button, .project__description .a--button{
+.project__description .button, .project__description .button{
     justify-self: flex-end;
     margin: 0px;
 }

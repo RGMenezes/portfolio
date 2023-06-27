@@ -21,7 +21,7 @@ Contribuições são bem-vindas! Se você identificar melhorias no código ou no
 ## Contato
 Para entrar em contato comigo ou conhecer mais sobre meu trabalho, você pode me encontrar nos seguintes canais:
 
-* Email: [faelgmp@gmail.com](faelgmp@gmail.com)
+* Email: [faelgmp@gmail.com](mailto:faelgmp@gmail.com)
 * LinkedIn: [Rafael Menezes](https://www.linkedin.com/in/rafael-menezes-16b002246/)
 * GitHub: [RGMenezes](https://github.com/RGMenezes)
 

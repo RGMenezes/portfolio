@@ -23,8 +23,8 @@ function selectAboutMe(value){
         addClass(arrText[0], setTime);
         addClass(arrText[1], setTime);
     }else if(value == 1){
-        addClass(arrText[0], setTime);
-        removeClass(arrText[1], setTime);
+        addClass(arrText[1], setTime);
+        removeClass(arrText[0], setTime);
     }else{
         removeClass(arrText[0], setTime);
         removeClass(arrText[1], setTime);

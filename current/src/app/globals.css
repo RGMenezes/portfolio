@@ -19,7 +19,7 @@
   --color--overlay: #0A1128;
 
   --border--radius: 8px;
-  --backdrop--blur: blur(10px);
+  --backdrop--blur: blur(20px);
 }
 
 html,

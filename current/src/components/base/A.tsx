@@ -10,7 +10,7 @@ interface AProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     size?: "small" | "medium" | "large";
 };
 
-export default function A({ children, className = "", variant = "text", Icon, iconPosition = "right", detached, size = "small", ...props }: AProps) {
+export default function A({ children, className = "", variant = "text", Icon, iconPosition = "right", detached, size = "small", tabIndex, ...props }: AProps) {
     const iconSizeMap = {
         small: 16,
         medium: 24,
@@ -19,7 +19,7 @@ export default function A({ children, className = "", variant = "text", Icon, ic
     const iconSize = iconSizeMap[variant === "icon" ? "large" : size];
 
     return (
-        <a className={`${styles.clear} ${styles[variant]} ${detached && styles.detached} ${className}`} {...props}>
+        <a tabIndex={tabIndex ?? 0} className={`${styles.clear} ${styles[variant]} ${detached && styles.detached} ${className}`} {...props}>
             {Icon && iconPosition === "left" && <Icon size={iconSize}/>}
             {variant !== "icon" && children}
             {Icon && iconPosition === "right" && <Icon size={iconSize}/>}

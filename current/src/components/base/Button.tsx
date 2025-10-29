@@ -12,7 +12,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     size?: "small" | "medium" | "large";
 };
 
-export default function Button({ children, className = "", variant = "buttonPrimary", Icon, iconPosition = "right", detached, size = "small", ...props }: ButtonProps) {
+export default function Button({ children, className = "", variant = "buttonPrimary", Icon, iconPosition = "right", detached, size = "small", tabIndex, ...props }: ButtonProps) {
     const iconSizeMap = {
         small: 16,
         medium: 24,
@@ -21,6 +21,7 @@ export default function Button({ children, className = "", variant = "buttonPrim
     const iconSize = iconSizeMap[variant === "icon" ? "large" : size];
     return (
         <button 
+            tabIndex={tabIndex ?? 0}
             className={`${styles.clear} ${styles[variant]} ${detached && styles.detached} ${className}`} 
             type="button" 
             {...props}

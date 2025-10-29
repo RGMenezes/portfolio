@@ -3,20 +3,28 @@
     top: 0;
     left: 0;
 
-    height: 65px;
+    height: 60px;
     width: 100%;
     padding: 2px 16px;
 
     display: grid;
     grid-template-columns: 1fr 70px 1fr;
+    grid-template-rows: 60px 0px;
     align-items: center;
     gap: 10px;
     
-    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: var(--backdrop--blur);
+    backdrop-filter: var(--backdrop--blur);
+
+    transition: all 0.3s ease;
+}
+.containerOpenMenu {
+    height: 100vh;
+    grid-template-rows: 60px 1fr;
 }
 
 .fill{
-    height: 65px;
+    height: 60px;
     width: 100%;
 }
 
@@ -31,9 +39,27 @@
     justify-self: end;
 }
 
+.menuNav{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / -1;
+
+    scale: 0;
+    opacity: 0;
+    transition: all .3s ease;
+}
+.containerOpenMenu > .menuNav{
+    scale: 1;
+    opacity: 1;
+}
+
 @media screen and (min-width: 768px) {
     .container{
-        height: 64px;
         grid-template-columns: auto 70px 1fr;
     }
 }

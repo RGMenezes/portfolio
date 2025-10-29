@@ -19,6 +19,7 @@
   --color--overlay: #0A1128;
 
   --border--radius: 8px;
+  --backdrop--blur: blur(10px);
 }
 
 html,
@@ -41,4 +42,9 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+*[tabindex]:focus-visible {
+  outline: 1px dashed var(--color--border);
+  outline-offset: 2px;
 }

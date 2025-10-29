@@ -4,8 +4,8 @@ import styles from "./NavPage.module.css";
 
 export default function NavPage({ row, curriculum }: { row?: boolean, curriculum?: boolean }) {
     return (
-        <nav className={`${styles.container} ${row && styles.row}`}>
-            <ul className={styles.list}>
+        <nav>
+            <ul className={`${styles.list} ${row && styles.row}`}>
                 <li>
                     <A href="#">Início</A>
                 </li>

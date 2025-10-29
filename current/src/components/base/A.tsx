@@ -3,7 +3,7 @@ import styles from "./A.module.css";
 
 interface AProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     children ?: React.ReactNode;
-    variant ?: "text" | "buttonPrimary" | "buttonSecondary" | "icon";
+    variant ?: "text" | "buttonPrimary" | "buttonSecondary" | "icon" | "author";
     Icon ?: IconType;
     iconPosition ?: "left" | "right";
     detached ?: boolean;

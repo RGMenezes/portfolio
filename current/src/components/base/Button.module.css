@@ -2,6 +2,7 @@
     all: unset;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
     cursor: pointer;
     
@@ -16,7 +17,7 @@
 }
 
 .buttonPrimary {
-    padding: 12px 24px;
+    padding: 10px 22px;
     
     background-color: var(--color--primary);
     border-radius: var(--border--radius);

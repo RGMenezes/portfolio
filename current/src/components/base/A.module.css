@@ -2,6 +2,7 @@
     all: unset;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
     cursor: pointer;
     
@@ -30,6 +31,24 @@
     transition: all .05s ease-in-out;
 }
 
+.author{
+    font-size: 10px;
+    color: var(--color--secondary);
+    text-decoration: none;
+}
+.author.detached{
+    color: var(--color--accent);
+}
+@media screen and (min-width: 768px) {
+    .author:hover{
+        color: var(--color--tertiary);
+    }
+}
+.author:active{
+    transform: scale(0.95);
+    transition: all .05s ease-in-out;
+}
+
 .buttonPrimary {
     padding: 12px 24px;
     
@@ -52,7 +71,7 @@
 }
 
 .buttonSecondary {
-    padding: 12px 24px;
+    padding: 10px 22px;
     
     border: 2px solid var(--color--primary);
     border-radius: var(--border--radius);

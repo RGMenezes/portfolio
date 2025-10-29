@@ -1,0 +1,39 @@
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 65px;
+    width: 100%;
+    padding: 2px 16px;
+
+    display: grid;
+    grid-template-columns: 1fr 70px 1fr;
+    align-items: center;
+    gap: 10px;
+    
+    backdrop-filter: blur(8px);
+}
+
+.fill{
+    height: 65px;
+    width: 100%;
+}
+
+.logo{
+    padding: 2px;
+    width: 36px;
+    
+    fill: var(--color--on-background);
+}
+
+.menu{
+    justify-self: end;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        height: 64px;
+        grid-template-columns: auto 70px 1fr;
+    }
+}

@@ -1,0 +1,42 @@
+.h1 {
+    font-family: var(--font-space-grotesk), sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+.h2 {
+    font-family: var(--font-space-grotesk), sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+.h3 {
+    font-family: var(--font-space-grotesk), sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+.h4 {
+    font-family: var(--font-inter), sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+.p1 {
+    font-family: var(--font-inter), sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.p2 {
+    font-family: var(--font-inter), sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.p3 {
+    font-family: var(--font-inter), sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: italic;
+}
+.author{
+    font-family: var(--font-space-grotesk), sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}

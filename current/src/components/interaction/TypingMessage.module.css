@@ -1,0 +1,21 @@
+@keyframes strobe {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.textIllustrative{
+    width: 100%;
+    text-align: center;
+    color: var(--color--secondary);
+}
+.textIllustrative::after{
+    content: '|';
+    animation: strobe 1s infinite;
+}

@@ -1,0 +1,82 @@
+.clear {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    
+    font-family: var(--font-inter);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    
+    border: none;
+    line-height: 1; 
+    transition: all .2s ease-in-out;
+}
+
+.buttonPrimary {
+    padding: 12px 24px;
+    
+    background-color: var(--color--primary);
+    border-radius: var(--border--radius);
+    box-shadow: var(--color--shadow);
+    color: var(--color--on-primary);
+}
+.buttonPrimary.detached{
+    background-color: var(--color--accent);
+}
+@media screen and (min-width: 768px) {
+    .buttonPrimary:hover{
+        background-color: var(--color--tertiary);
+    }
+}
+.buttonPrimary:active{
+    transform: scale(0.97);
+    transition: all .05s ease-in-out;
+}
+
+.buttonSecondary {
+    padding: 12px 24px;
+    
+    border: 2px solid var(--color--primary);
+    border-radius: var(--border--radius);
+    box-shadow: var(--color--shadow);
+    color: var(--color--primary);
+    /* Garante que o contorno não seja removido pelo .clear */
+    background-color: transparent; 
+}
+.buttonSecondary.detached{
+    border-color: var(--color--accent);
+    color: var(--color--accent);
+}
+@media screen and (min-width: 768px) {
+    .buttonSecondary:hover{
+        border-color: var(--color--tertiary);
+        color: var(--color--tertiary);
+    }
+}
+.buttonSecondary:active{
+    transform: scale(0.97);
+    transition: all .05s ease-in-out;
+}
+
+.icon{
+    min-height: 40px;
+    min-width: 40px;
+    
+    justify-content: center;
+    border-radius: var(--border--radius);
+}
+.icon.detached{
+    color: var(--color--accent);
+}
+@media screen and (min-width: 768px) {
+    .icon:hover{
+        color: var(--color--tertiary);
+    }
+}
+.icon:active{
+    transform: scale(0.95);
+    transition: all .05s ease-in-out;
+}

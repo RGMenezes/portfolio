@@ -1,0 +1,13 @@
+.tag {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 4px;
+    gap: 5px;
+
+    background-color: var(--color--primary);
+    border-radius: 6px;
+    color: var(--color--on-primary);
+}

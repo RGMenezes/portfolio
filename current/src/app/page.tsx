@@ -11,6 +11,10 @@ import trainingTimer from "@/data/projects/trainingTimer";
 import social from "@/data/social";
 import ImageIllustrationCuate from "@pub/images/cuate1Illustration.svg";
 import ImageIllustrationProfile from "@pub/images/profileIllustration.svg";
+import CardFeedback from "@/components/cards/CardFeedback";
+import feedbackAsafe from "@/data/feedbacks/feedbackAsafe";
+import feedback99Client from "@/data/feedbacks/feedback99Client";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -32,7 +36,8 @@ export default function Home() {
       <main>
         <Section id="projects">
           <Text variant="h2">Projetos</Text>
-          <div className={styles.projectsGrid}>
+
+          <div className={styles.grid}>
             <CardProject project={trainingTimer} />
             <CardProject project={gestorFinanceiro} />
           </div>
@@ -40,6 +45,7 @@ export default function Home() {
                 
         <Section id="aboutMe" className={styles.aboutMeSection}>
           <Text variant="h2">Sobre Mim</Text>
+
           <article className={styles.aboutMeArticle}>
             <div className={styles.aboutMeContent}>
               <ImageIllustrationProfile className={styles.illustration}/>
@@ -56,7 +62,17 @@ export default function Home() {
             </div>
           </article>
         </Section>
+
+        <Section id="feedbacks" className={styles.feedbackSection}>
+          <Text variant="h3">Feedbacks</Text>
+          <div className={styles.grid}>
+            <CardFeedback feedback={feedbackAsafe} />
+            <CardFeedback feedback={feedback99Client} />
+          </div>
+        </Section>
       </main>
+
+      <Footer />
     </>
   );
 }

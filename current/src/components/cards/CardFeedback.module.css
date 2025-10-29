@@ -1,0 +1,40 @@
+.container{
+    max-width: 340px;
+    width: 100%;
+    padding: 16px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+
+    background-color: var(--color--surface);
+    border-radius: var(--border--radius);
+    box-shadow: var(--color--shadow);
+}
+
+.contentRow{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5;
+}
+
+.text{
+    text-align: justify;
+}
+
+.footerRow{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5;
+}
+.starsRow{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1;
+}

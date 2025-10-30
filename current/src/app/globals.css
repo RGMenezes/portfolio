@@ -48,3 +48,7 @@ body {
   outline: 1px dashed var(--color--border);
   outline-offset: 2px;
 }
+
+:target {
+  scroll-margin-top: 100px;
+}

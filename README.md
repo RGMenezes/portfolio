@@ -1,8 +1,8 @@
 # Portfólio
-Bem-vindo ao meu portfólio como desenvolvedor web! Este repositório contém o código-fonte e os arquivos necessários para visualizar e implantar meu portfólio.
+Bem-vindo ao meu portfólio como desenvolvedor web!
 
 # Quem sou eu?
-Meu nome é Rafael Menezes e sou um programador front-end com experiência em diversas tecnologias e frameworks. Este site foi criado para apresentar meu trabalho, habilidades e projetos desenvolvidos ao longo da minha carreira.
+Meu nome é Rafael Menezes e sou um programador full-stack e este site foi criado para apresentar meu trabalho, habilidades e projetos desenvolvidos ao longo da minha carreira.
 
 # Características do site
 * Design Responsivo: O site foi desenvolvido utilizando práticas de design responsivo, garantindo uma experiência de visualização ideal em diferentes dispositivos e tamanhos de tela.

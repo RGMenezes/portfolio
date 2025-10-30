@@ -10,9 +10,7 @@ import styles from "./Header.module.css";
 
 export default function Header() {
   const [visibility, setVisibility] = useState(false);
-  const [isMobile, setIsMobile] = useState(
-    typeof window !== "undefined" ? window.innerWidth < 768 : false
-  );
+  const [isMobile, setIsMobile] = useState(true);
     
   useEffect(() => {
     const handleResize = () => {
@@ -27,7 +25,7 @@ export default function Header() {
     <div>
       <header className={`${styles.container} ${visibility ? styles.containerOpenMenu : ""}`}>
         <RmLogo className={styles.logo}/>
-        <TypingMessage data={["PV 6:9-11", "JO 3:16", "MT 6:6"]}/>
+        <TypingMessage data={["PV 6:9-11", "JO 3:16", "MT 6:6", "JR 29:11", "FP 4:6–7"]}/>
         {isMobile ?
           <>
             <div className={styles.menu}>

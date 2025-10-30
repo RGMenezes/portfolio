@@ -17,6 +17,7 @@ export default function Header() {
       setIsMobile(window.innerWidth < 768);
       setVisibility(false);
     };
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

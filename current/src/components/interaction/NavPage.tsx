@@ -22,7 +22,7 @@ export default function NavPage({ row, curriculum }: { row?: boolean, curriculum
           <A href="#feedbacks">Feedbacks</A>
         </li>
         {curriculum && <li>
-          <A variant="buttonSecondary" href="#" Icon={FaRegFilePdf}>Currículo</A>
+          <A variant="buttonSecondary" download="Curriculo-Rafael-da-Gloria-Menezes" href="/files/curriculum.pdf" Icon={FaRegFilePdf}>Currículo</A>
         </li>}
       </ul>
     </nav>

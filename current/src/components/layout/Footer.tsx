@@ -18,7 +18,7 @@ export default function Footer(){
         <div className={styles.content}>
           <NavPage />
 
-          <A variant="buttonSecondary" href="#" Icon={FaRegFilePdf}>Currículo</A>
+          <A variant="buttonSecondary" download="Curriculo-Rafael-da-Gloria-Menezes" href="/files/curriculum.pdf" Icon={FaRegFilePdf}>Currículo</A>
 
           <ul className={styles.iconList}>
             <li><A variant="icon" target="_blank" rel="external" href={social.whatsapp.url} Icon={social.whatsapp.icon} /></li>

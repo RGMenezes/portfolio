@@ -1,7 +1,8 @@
+import ReactMarkdown from "react-markdown";
 import styles from "./Text.module.css";
 
 interface TextProps {
-    variant?: "h1" | "h2" | "h3" | "h4" | "p1" | "p2" | "p3";
+    variant?: "h1" | "h2" | "h3" | "h4" | "p1" | "p2" | "p3" | "md";
     children?: React.ReactNode;
     className?: string;
     key?: string | number;
@@ -20,6 +21,10 @@ export default function Text({ children, className = "", variant = "p1", ...prop
     return <h3 className={`${styles.h3} ${className}`} {...props}>{children}</h3>;
   case "h4":
     return <h4 className={`${styles.h4} ${className}`} {...props}>{children}</h4>;
+  case "md": 
+    return <div className={`${styles.md} ${className}`} {...props}>
+      <ReactMarkdown>{typeof children === "string" ? children : String(children)}</ReactMarkdown> 
+    </div>;
   default:
     return <p className={`${styles[variant]} ${className}`} {...props}>{children}</p>;
   }

@@ -8,7 +8,7 @@ import styles from "./Footer.module.css";
 import Section from "./Section";
 import social from "@/data/social";
 
-export default function Footer(){
+export default function Footer({ home }: { home?: boolean }) {
   const date = new Date();
   return (
     <footer className={styles.footer}>
@@ -16,7 +16,7 @@ export default function Footer(){
         <Text variant="h3">RGMenezes</Text>
 
         <div className={styles.content}>
-          <NavPage />
+          <NavPage home={home}/>
 
           <A variant="buttonSecondary" download href="/files/curriculum-rafael-da-gloria-menezes.pdf" Icon={FaRegFilePdf}>Currículo</A>
 

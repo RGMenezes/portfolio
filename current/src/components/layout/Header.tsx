@@ -8,7 +8,7 @@ import NavPage from "../interaction/NavPage";
 import TypingMessage from "../interaction/TypingMessage";
 import styles from "./Header.module.css";
 
-export default function Header() {
+export default function Header({ home }: { home?: boolean }) {
   const [visibility, setVisibility] = useState(false);
   const [isMobile, setIsMobile] = useState(true);
     
@@ -34,12 +34,12 @@ export default function Header() {
             </div>
                         
             <div onClick={() => setVisibility(false)} className={styles.menuNav}>
-              <NavPage curriculum/>
+              <NavPage curriculum home={home}/>
             </div>
           </>
           :
           <div className={styles.menu}>
-            <NavPage row curriculum/>
+            <NavPage row curriculum home={home}/>
           </div>
         }
       </header>

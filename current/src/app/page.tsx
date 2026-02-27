@@ -19,7 +19,7 @@ import ImageIllustrationProfile from "@pub/images/profileIllustration.svg";
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header home />
       <Section className={styles.hero}>
         <Text variant="h1">Olá, bem-vindo!</Text>
         <Text variant="p2">Sou Rafael, dev full-stack. Aqui você vai ver alguns sites e apps que fiz e como foram elaborados.</Text>
@@ -72,7 +72,7 @@ export default function Home() {
         </Section>
       </main>
 
-      <Footer />
+      <Footer home />
     </>
   );
 }

@@ -32,7 +32,7 @@ const trainingTimer: IProject = {
   technologies: [FaReact, SiExpo, BiLogoTypescript, BiLogoPostgresql, RiSupabaseLine],
   repoLink: "https://github.com/Tart-development/training-timer-front-end",
   download: {
-    path: "files/trainingTimer/test-app.apk",
+    path: "/files/trainingTimer/test-app.apk",
     name: "TrainingTimer.apk",
   },
   status: "Em Desenvolvimento",
